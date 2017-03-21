@@ -3,13 +3,80 @@ body, html {
     margin: 0;
 }
 
-.bg {
+/*
+    Container
+ */
 
-    /* The image used */
-    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/static/city1.png");
-
+.bgcover {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.mycont {
+    margin: auto;
+}
+
+.mycont2 {
+    align-self: flex-end;
+    margin-top: 3%;
+}
+
+#firstbg {
+    background-image: linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)),
+            url("/static/city1.png");
+}
+
+#secondbg {
+    background-color: #E3F2FD;
+}
+
+#thirdbg {
+    background-color: #E8F5E9;
+}
+
+/*
+    Text
+ */
+
+.title-white {
+    color: white;
+    text-align: center;
+    font-size: 10vmin;
+}
+
+.title-black {
+    color: black;
+    text-align: center;
+    font-size: 10vmin;
+}
+
+/*
+    Button
+ */
+
+.mybtn-bar {
+    text-align: center;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+}
+
+.mybtn {
+    width: 7vmin;
+    height: 7vmin;
+    font-size: 2vmin;
+    border-radius: 50%;
+    border: none;
+    margin: 1vmin;
+    display: inline-block;
 }
